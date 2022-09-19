@@ -211,4 +211,12 @@ img {
 }
 .about__data {
   text-align: center;
+}
+
+/* ========== Security ========== */
+.security__container {
+  gap: 2.5rem;
+}
+.security__description {
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
