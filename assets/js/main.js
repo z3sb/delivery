@@ -47,11 +47,12 @@ function scrollHeader() {
 }
 window.addEventListener('scroll', scrollHeader)
 /* ================== Show Scroll up ================== */
+const scrollUpButton = document.getElementById('scroll-up');
 function scrollUp() {
-  const scrollUp = document.getElementById('scroll-up');
-  if (this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+  if (this.scrollY >= 560) scrollUpButton.classList.add('show-scroll'); else scrollUpButton.classList.remove('show-scroll')
 }
-window.addEventListener('scroll', scrollUp)
+window.addEventListener('scroll', scrollUp);
+scrollUpButton.addEventListener('click', () => window.scrollTo(0, 0))
 /* ================== Dark Light Theme ================== */
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
